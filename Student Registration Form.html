@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+<form action="#" method="post">
+        <h1>Student Registration Form</h1>
+
+        <label for="name">
+            Full Name:
+        </label>
+        <input type="text"
+            id="name"
+            name="fullname"
+            placeholder="Nguyen Van A"
+            minlength="3"
+            maxlength="50"
+            required
+        ><br>
+        <label for="number">
+            Student Number:
+        </label>
+        <input type="text"
+            id="number"
+            name="studentnumber"
+            placeholder="Enter your student number"
+            minlength="9"
+            maxlength="9"
+            required
+        > <br>
+        <label for="email">
+            Email:
+        </label>
+        <input type="email"
+            id="email"
+            name="email"
+            placeholder="mssv@st.tvu.edu.vn"
+            required
+        ><br>
+        <label for="phone">
+            Phone Number:
+        </label>
+        <input type="tel"
+            id="phone"
+            name="phonenumber"
+            placeholder="Enter your phone number"
+            pattern="[0-9]{10}"
+            required
+        ><br>
+
+        <label for="date">
+            Date of Birth:
+        </label>
+        <input type="date"
+            id="date"
+            name="dob"
+            required
+        ><br>
+
+        <label for="number">
+            Age:
+        </label>
+        <input type="number"
+            id="age"
+            name="age"
+            placeholder="18-30"
+            min="18"
+            max="30"
+            required
+        ><br>
+        <p>Gender:</p>
+        <input type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            required
+        >
+        <label for="male">
+            Male
+        </label>
+        <input type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+        >
+        <label for="female">
+            Female
+        </label><br>
+
+        <label for="major">
+            Major:
+        </label>
+        <select id="major" name="major" required>
+            <option value="">Select your major</option>
+            <option value="computer_science">Computer Science</option>
+            <option value="information_technology">Information Technology</option>
+            <option value="software_engineering">Software Engineering</option>
+            <option value="data_science">Data Science</option>
+            <option value="cyber_security">Cyber Security</option>
+        </select><br>
+
+        <label for="number">
+            year:
+        </label>
+        <select id="year" name="year" required>
+            <option value="">Select your year</option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+            <option value="5">5th Year</option>
+            <option value="6">6th Year</option>
+        </select><br>
+        <p>Hobbies</p>
+
+        <input  
+            type="checkbox"
+            id="Gaming"
+            name="hobby"
+            value="sport"
+        >
+
+        <label for="sports">
+            Sports
+        </label>
+
+        <input 
+            type="checkbox"
+            id="gaming"
+            name="hobby"
+            value="gaming"
+        >
+
+        <label for="gaming">
+            Gaming
+        </label>
+        <br>
+
+        <input for="Listen to Music"
+                
+            type="checkbox"
+            id="music"
+            name="hobby"
+            value="music"
+        >
+        <label for="music">
+            Music
+        </label>
+
+        <input for="coding"
+            type="checkbox"
+            id="coding"
+            name="hobby"
+            value="coding"
+        >
+        <label for="coding">
+            Coding
+        </label>
+        <br>
+        <p>Programming languages</p>
+
+        <input for="C"
+            type="checkbox"
+            id="C"
+            name="programming_language"
+            value="C"
+        >
+        <label for="C">
+            C
+        </label>
+
+        <input for="Python"
+            type="checkbox"
+            id="Python"
+            name="programming_language"
+            value="Python"
+        >
+        <label for="Python">
+            Python
+        </label>
+
+        <input for="JavaScript"
+            type="checkbox"
+            id="JavaScript"
+            name="programming_language"
+            value="JavaScript"
+        >
+        <label for="JavaScript">
+            JavaScript
+        </label>
+        <br>
+
+        <label for="photo">
+            Profile Picture:
+        </label>
+        <input type="file"
+            id="photo"
+            name="profile_picture"
+            accept="image/*"
+            required
+        ><br>
+
+        <label for="studentid">
+            Student ID Card:
+        </label>
+        <input type="text"
+            id="studentid"
+            name="studentid"
+            value="SV001"
+            readonly
+        ><br>
+        <br>
+        <label for="country"
+        >
+            Country:
+        </label>
+        <input
+            type="text"
+            id="country"
+            name="country"
+            value="Vietnam"
+            disabled
+        ><br>
+        <br>
+        
+        <label for="address">
+            Address:
+        </label>
+        <textarea id="address"
+            name="address"
+            placeholder="Enter your address"
+            required
+        ></textarea><br>
+        <label for="introduction">
+            Introduction:
+        </label>
+        <textarea id="introduction"
+            name="introduction"
+            placeholder="Introduce yourself"
+            minlength="10"
+            maxlength="200"
+            required
+        ></textarea><br>
+
+        <label for="password">
+            Password:
+        </label>
+        <input type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            minlength="6"
+            required
+        ><br>
+
+        <button>
+            Press this to submit the form
+        </button>
+        <button type="reset">
+            Reset
+        </button>
+</form>
+
+</body>
+</html>
+
