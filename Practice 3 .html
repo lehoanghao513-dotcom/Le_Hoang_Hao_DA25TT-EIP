@@ -1,0 +1,352 @@
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Major</th>
+        <th>Age</th>
+    </tr>
+
+    <tr>
+        <td>John</td>
+        <td>IT</td>
+        <td>20</td>
+    </tr>
+
+    <tr>
+        <td>Anna</td>
+        <td>AI</td>
+        <td>21</td>
+    </tr>
+</table>
+
+<table border="1">
+    <tr>
+        <th colspan="3">Student Information</th>
+    </tr>
+
+    <tr>
+        <th>Name</th>
+        <th>Major</th>
+        <th>Age</th>
+    </tr>
+
+    <tr>
+        <td>John</td>
+        <td>IT</td>
+        <td>20</td>
+    </tr>
+</table>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Major</th>
+        <th>Year</th>
+    </tr>
+
+    <tr>
+        <td>John</td>
+        <td rowspan="2">IT</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>Anna</td>
+        <td>3</td>
+    </tr>
+</table>
+
+<table border="1">
+    <tr>
+        <th colspan="4">Student Weekly Schedule</th>
+    </tr>
+
+    <tr>
+        <th>Day</th>
+        <th>Morning</th>
+        <th>Afternoon</th>
+        <th>Room</th>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Monday</td>
+        <td>HTML</td>
+        <td>Database</td>
+        <td rowspan="2">A101</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">Independent Study</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Tuesday</td>
+        <td>Python</td>
+        <td>Statistics</td>
+        <td rowspan="2">B202</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">Project Work</td>
+    </tr>
+</table>
+
+<!DOCTYPE html>
+<html>
+<button>
+	Press this to submit form
+</button>
+
+<label for="name">
+    Full Name:
+</label>
+
+<input
+    type="text"
+    id="name"
+    name="fullName"
+    placeholder="Enter your full name"
+>
+<label for="email">
+    Email:
+</label>
+
+<input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="example@gmail.com"
+><br>
+
+<label for="age">
+    Age:
+</label>
+
+<input
+    type="number"
+    id="age"
+    name="age"
+    min="18"
+    max="100"
+>
+<p>Gender:</p>
+
+<input
+    type="radio"
+    id="male"
+    name="gender"
+    value="male"
+>
+
+<label for="male">
+    Male
+</label>
+
+<input
+    type="radio"
+    id="female"
+    name="gender"
+    value="female"
+>
+
+<label for="female">
+    Female
+</label>
+
+<p>Hobbies:</p>
+
+<input
+    type="checkbox"
+    id="sports"
+    name="hobby"
+    value="sports"
+>
+<label for="sports">
+    Sports
+</label>
+<br>
+<input
+    type="checkbox"
+    id="music"
+    name="hobby"
+    value="music"
+>
+
+<label for="music">
+    Music
+</label>
+
+<br>
+
+<input
+    type="checkbox"
+    id="reading"
+    name="hobby"
+    value="reading"
+>
+
+<label for="reading">
+    Reading
+</label>
+
+<label for="major">
+    Major:
+</label>
+
+<select
+    id="major"
+    name="major"
+>
+
+    <option value="">
+        -- Select a major --
+    </option>
+
+    <option value="it">
+        Information Technology
+    </option>
+
+    <option value="ai">
+        Artificial Intelligence
+    </option>
+
+    <option value="business">
+        Business Administration
+    </option>
+</select>
+
+<label for="message">
+    Message:
+</label>
+
+<br>
+
+
+
+
+<textarea
+    id="message"
+    name="message"
+    rows="5"
+    cols="40"
+    placeholder="Enter your message"
+>
+</textarea>
+
+
+<label for="photo">
+    Profile Picture:
+</label>
+
+<input
+    type="file"
+    id="photo"
+    name="photo"
+    accept="image/*"
+>
+<label for="studentId">
+    Student ID:
+</label>
+
+<input
+    type="text"
+    id="studentId"
+    name="studentId"
+    value="SV001"
+    readonly
+>
+<label for="country">
+    Country:
+</label>
+
+<input
+    type="text"
+    id="country"
+    name="country"
+    value="Vietnam"
+    disabled
+>
+<label for="studentCode">
+    Student Code:
+</label>
+
+<input
+    type="text"
+    id="studentCode"
+    name="studentCode"
+    pattern="[A-Za-z0-9]+" 
+    required
+>
+
+
+<h2>Thông tin quảng lí đào tạo</h2>
+<table border="1">
+  <tr>
+    <th rowspan="2">STT</th>
+    <th rowspan="2">Nội dung quảng lí</th>
+    <th colspan="2">Số lượng </th>
+    <th rowspan="2">Trạng  thái</th>
+  </tr>
+  <tr>
+    <th>ĐÃ XỬ LÝ</th>
+    <th>CHƯA XỬ LÝ</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Hồ Sơ Nhập Học</td>
+    <td>850</td>
+    <td>25</td>
+    <td>Đang cập nhật</td>
+  </tr>
+  <tr>  
+  <td>2</td>
+    <td>Đăng ký học phần</td>
+    <td>1240</td>
+    <td>18</td>
+    <td>Đang xử lý</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Đăng ký ký túc xá</td>
+    <td>430</td>
+    <td>12</td>
+    <td>Đang xử lý</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Học bổng sinh viên</td>
+    <td>215</td>
+    <td>7</td>
+    <td>Đã cập nhật</td>
+  </tr>
+  <tr rowspan="2">
+    <th colspan="2">Tổng cộng</th>
+    <th>2.735</th>
+    <th>62</th>
+    <th>---</th>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
